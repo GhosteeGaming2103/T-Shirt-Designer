@@ -1,0 +1,374 @@
+* {
+  margin: 0%;
+  top: 0;
+  font-family: "Anek Gujarati", sans-serif;
+}
+
+body {
+  background-color: #e2fdff;
+}
+
+/* ----- Header ----- */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  background-color: #5465ff;
+  padding-bottom: 25px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 10px;
+  left: 0;
+  top: 10px;
+}
+
+.web-title {
+  position: relative;
+  margin-top: 25px;
+  font-size: 50px;
+  left: 100px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.navigation {
+  margin-top: 30px;
+}
+
+.nav-items:hover {
+  color: #95c9cc;
+  cursor: pointer;
+}
+
+.cart-counter {
+  position: relative;
+  left: 110px;
+  top: 10px;
+  background-color: #ed2020;
+  width: fit-content;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50%;
+  visibility: hidden;
+  font-size: 15px;
+}
+
+.cart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-img {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 45%;
+}
+
+/* -----  ----- */
+
+/* ----- Main ----- */
+
+li {
+  display: inline;
+  margin-left: 200px;
+  font-size: 25px;
+  font-family: "Cabin", sans-serif;
+}
+
+.content-title {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 55px;
+  color: #5465ff;
+  font-weight: bold;
+  font-family: "Cabin", sans-serif;
+}
+
+.designer {
+  display: flex;
+  background-color: #9bb1ff;
+  box-shadow: 5px 5px 3px rgb(160, 160, 160);
+  width: fit-content;
+  justify-content: center;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  gap: 25px;
+}
+
+.tshirt-design {
+  background-color: #788bff;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.design-info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #788bff;
+  padding: 0px;
+  width: 475px;
+  border: 5px solid black;
+  border-radius: 5px;
+  font-family: "Anek Gujarati", sans-serif;
+}
+
+.tshirt-form {
+  width: 450px;
+  height: 300px;
+  padding: 0%;
+}
+
+.grid {
+  display: grid;
+  margin-left: 50;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 200px 200px;
+  margin-left: 25px;
+  margin-top: 50px;
+  height: 370px;
+}
+.grid3,
+.grid4 {
+  height: 100px;
+}
+
+.form-headers {
+  color: #e2fdff;
+  text-align: center;
+}
+
+.check-labels {
+  margin-left: 30px;
+}
+
+.grid1 > input {
+  margin-left: 70px;
+}
+
+.grid2 > input {
+  margin-left: 40px;
+}
+
+label {
+  color: #e2fdff;
+}
+
+.color-label,
+.size-label {
+  font-size: 30px;
+  color: white;
+  position: relative;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.size {
+  margin-left: 67px;
+}
+
+.quantity-number {
+  margin-left: 65px;
+}
+
+.color-select {
+  margin-left: 30px;
+  border: 2px solid black;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.total-display {
+  text-align: center;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.add-button {
+  margin-left: 125px;
+  background-color: rgb(87, 163, 255);
+  box-shadow: 3px 3px 1px rgb(121, 121, 121);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 7px;
+}
+
+.checkout-button:hover, /* Hover effect for add to cart and checkout button */
+.add-button:hover {
+  background-color: rgb(74, 129, 196);
+  cursor: pointer;
+}
+
+.reset-button {
+  margin-left: 50px;
+  background-color: #ed2020;
+  box-shadow: 3px 3px 1px rgb(121, 121, 121);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 7px;
+}
+.reset-button:hover {
+  cursor: pointer;
+  background-color: #be1a1a;
+}
+
+.cart-popup {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.cart-content {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(160, 160, 160);
+}
+
+.cart-header {
+  display: flex;
+  justify-content: right;
+  gap: 190px;
+}
+
+.cart-title {
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 30px;
+  position: relative;
+}
+
+.close-popup {
+  border-radius: 100%;
+  border-color: transparent;
+  background-color: transparent;
+  position: relative;
+  right: 5px;
+  padding: 0px 10px 0px 10px;
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+}
+
+.close-popup:hover {
+  cursor: pointer;
+}
+
+.list-area {
+  width: auto;
+  height: 220px;
+}
+
+.cart-list {
+  list-style-type: none;
+}
+
+.cart-list li img {
+  vertical-align: middle; /* | top | bottom */
+}
+.cart-list li p {
+  display: inline-block;
+  vertical-align: middle; /* | top | bottom */
+  font-size: 15px;
+}
+
+li.item {
+  margin: 5px;
+  /* background-color: grey; */
+  padding: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  line-height: 60px;
+  border-radius: 3px;
+}
+img.itemIMG {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #424242;
+}
+
+button.removeItem {
+  background-color: red;
+  color: white;
+}
+button.removeItem:hover {
+  cursor: pointer;
+}
+
+.bottom-cart {
+  display: flex;
+  font: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+
+.cart-content .cart-total-display {
+  position: relative;
+  font-family: "Anek Gujarati", sans-serif;
+  color: black;
+  text-align: center;
+}
+.cart-total-display {
+  display: inline-block;
+}
+
+.checkout-button {
+  text-decoration: none;
+  font-family: "Anek Gujarati", sans-serif;
+  font-size: 1.25rem;
+  color: white;
+
+  box-shadow: 3px 3px 1px rgb(121, 121, 121);
+  border-radius: 35px;
+  padding: 2px 5px 0px 5px;
+  background-color: rgb(87, 163, 255);
+}
+
+/* -----  ----- */
+
+/* ----- Footer ----- */
+footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* ----- Media Queries ----- */
+/* Fixes some issues */
+@media (min-width: 1920px) {
+  .nav-bar {
+    gap: 100px;
+  }
+
+  .web-title {
+    left: 0px;
+  }
+}
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+/* -----  ----- */

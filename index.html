@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>You-Tee's T-Shirt Designer</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Gujarati&family=Bebas+Neue&family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <script src="Scripts/order.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <img class="logo" src="Images/logo.png" />
+        <h1 class="web-title">You-Tee's</h1>
+        <nav class="navigation">
+          <ul style="list-style: none">
+            <li class="nav-items">Home</li>
+            <li class="nav-items">Shop</li>
+            <li class="nav-items">Design</li>
+            <li class="nav-items">Support</li>
+          </ul>
+        </nav>
+        <div class="cart-object">
+          <p class="cart-counter">0</p>
+          <button type="click" class="cart-button">
+            <img class="cart-img" src="Images/cart-white.png" />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <h1 class="content-title">Designer</h1>
+      <div class="designer">
+        <img class="tshirt-design" src="Images/Tshirts/tshirt-white.png" />
+        <div class="design-info">
+          <form class="tshirt-form" id="tshirt-form">
+            <div class="grid">
+              <div class="grid1">
+                <h1 class="form-headers">Size</h1>
+                <label class="sizes">
+                  <input
+                    class="size"
+                    type="radio"
+                    id="small"
+                    name="sizes"
+                    value="Small"
+                    checked="checked"
+                  />
+                  Small</label
+                ><br />
+                <label class="sizes">
+                  <input
+                    class="size"
+                    type="radio"
+                    id="medium"
+                    name="sizes"
+                    value="Medium"
+                  />
+                  Medium</label
+                >
+                <br />
+                <label class="sizes">
+                  <input
+                    class="size"
+                    type="radio"
+                    id="large"
+                    name="sizes"
+                    value="Large"
+                  />
+                  Large</label
+                >
+              </div>
+              <div class="grid2">
+                <h1 class="form-headers">Add-Ons</h1>
+                <label class="check-labels">
+                  <input
+                    type="checkbox"
+                    id="add-on1"
+                    name="add-on1"
+                    value="Dry-Fit"
+                  />
+                  Dry-Fit Fabric + $5.00</label
+                ><br />
+                <label class="check-labels">
+                  <input
+                    type="checkbox"
+                    id="add-on2"
+                    name="add-on2"
+                    value="Stain Resistant"
+                  />
+                  Stain Resistant + $7.00 </label
+                ><br />
+                <label class="check-labels">
+                  <input
+                    type="checkbox"
+                    id="add-on3"
+                    name="add-on3"
+                    value="Padded"
+                  />
+                  Padded + $10.00
+                </label>
+              </div>
+              <div class="grid3">
+                <h1 class="form-headers">Quantity</h1>
+                <input
+                  class="quantity-number"
+                  type="number"
+                  id="quantity"
+                  min="1"
+                  max="5"
+                  value="1"
+                />
+              </div>
+              <div class="grid4">
+                <h1 class="form-headers">Color</h1>
+                <select class="color-select" name="Color" id="color-select">
+                  <option value="Default">--Please choose a Color--</option>
+                  <option value="White">White</option>
+                  <option value="Black">Black</option>
+                  <option value="Red">Red + $3.00</option>
+                  <option value="Blue">Blue + $3.00</option>
+                  <option value="Green">Green + $3.00</option>
+                  <option value="Purple">Purple + $3.00</option>
+                  <br />
+                </select>
+              </div>
+            </div>
+            <h3 class="total-display">Total: $10.00</h3>
+            <button type="click" class="add-button" id="add-to-cart">
+              Add To Cart
+            </button>
+            <button type="click" class="reset-button" id="reset-design">
+              Reset Design
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="cart-popup">
+        <div class="cart-content">
+          <div class="cart-header">
+            <h2 class="cart-title">Cart</h2>
+            <button class="close-popup" type="click" id="close">X</button>
+          </div>
+          <div class="list-area">
+            <ul class="cart-list"></ul>
+          </div>
+          <div class="bottom-cart">
+            <h3 class="cart-total-display">Cart Is Empty</h3>
+            <a class="checkout-button">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Footer Info -->
+      <p>
+        &copy; 2022-2023 - Dayton Pedroza.
+        <a href="mailto:dpedroza116347@gmail.tstc.edu" title="email link">
+          dpedroza116347@gmail.tstc.edu</a
+        >
+        Mexia Tx. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
